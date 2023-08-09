@@ -49,7 +49,9 @@ export default function App() {
         name="World Detective Organization"
         content="An extra-legal, extra-privileged organization devoted to eradicating the world’s unsolved mysteries. Their branches exist throughout the world, one of which is the Nocturnal Detective Agency in Kanai Ward. The key players in their activities are Master Detectives who possess Forensic Fortes, but ordinary detectives are also enlisted."
       />
-      {cards}
+      <div className="card-container">
+        {cards}
+      </div>
     </div>
   )
 }
