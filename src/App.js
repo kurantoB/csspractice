@@ -5,31 +5,37 @@ import Card from './components/card'
 export default function App() {
   const cardData = [
     {
+      _id: 0,
       imgsrc: "https://static.miraheze.org/raincodewiki/0/0a/Yuma_Kokohead_-_Splash_Illustration.jpg",
       header: "Yuma Kokohead",
       blurb: "Detective-in-training",
     },
     {
+      _id: 1,
       imgsrc: "https://static.miraheze.org/raincodewiki/1/14/Master_Detective_-_Desuhiko_Thunderbolt_Illustration.png",
       header: "Desuhiko Thunderbolt",
       blurb: "Master Detective",
     },
     {
+      _id: 2,
       imgsrc: "https://static.miraheze.org/raincodewiki/9/97/Master_Detective_-_Fubuki_Clockford_Illustration.jpg",
       header: "Fubuki Clockford",
       blurb: "Master Detective",
     },
     {
+      _id: 3,
       imgsrc: "https://static.miraheze.org/raincodewiki/1/16/Master_Detective_-_Halara_Nightmare_Illustration.png",
       header: "Halara Nightmare",
       blurb: "Master Detective",
     },
     {
+      _id: 4,
       imgsrc: "https://static.miraheze.org/raincodewiki/c/c4/Master_Detective_-_Vivia_Twilight_Illustration.png",
       header: "Vivia Twilight",
       blurb: "Master Detective",
     },
     {
+      _id: 5,
       imgsrc: "https://static.miraheze.org/raincodewiki/a/ac/Nocturnal_Detective_Agency_-_Yakou_Furio_Illustration.png",
       header: "Yakou Furio",
       blurb: "Head of the Nocturnal Detective Agency",
@@ -37,13 +43,14 @@ export default function App() {
   ]
 
   const cards = cardData.map(item => (<Card
+    key={item._id}
     imgsrc={item.imgsrc}
     header={item.header}
     blurb={item.blurb}
   />))
 
   return (
-    <div>
+    <div className="contents">
       <SidePanel
         imgsrc="https://static.miraheze.org/raincodewiki/b/bf/WDO_Logo.jpg"
         name="World Detective Organization"
