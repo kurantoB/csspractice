@@ -1,0 +1,11 @@
+To make a new react project:
+
+npx create-react-app my-app
+cd my-app
+npm start
+
+
+
+To deploy to github pages:
+
+https://github.com/gitname/react-gh-pages
