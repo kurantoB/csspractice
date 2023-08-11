@@ -1,0 +1,5 @@
+- Only have one h1 tag in your page for accessibility purposes
+
+- Using arbitrary percentages (i.e. not 50% or 100%) is bad practice
+
+- calc is a really powerful tool
