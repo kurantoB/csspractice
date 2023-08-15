@@ -1,11 +1,62 @@
-To make a new react project:
+To create react project:
 
 npx create-react-app my-app
-cd my-app
-npm start
+Delete everything but App.js, index.css, index.js
+Clean up index.js
+Clean up App.js
 
 
 
 To deploy to github pages:
-
 https://github.com/gitname/react-gh-pages
+
+
+
+For split pane:
+import Split from 'react-split'
+
+
+
+For generating a random ID on the fly:
+import {nanoid} from 'nanoid'
+
+
+
+For tab-switching:
+import ReactMde from 'react-mde'
+
+
+
+For markdown to HTML:
+import Showdown from 'showdown'
+
+
+
+Using localStorage:
+localStorage.getItem("key")
+localStorage.setItem("key", value)
+    value must be of type string
+
+
+
+Use () => in useState() for lazy state initialization
+
+
+
+To stop an event's propagation to the parent:
+event.stopPropagation()
+
+
+
+To pass a closure into props:
+propName={(event) => myFunction(event, myArg)}
+
+
+
+Use this link in index.html to use a Material Symbols font library and set the class to "material-symbols-outlined":
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+
+To format dates:
+npm install date-fns
