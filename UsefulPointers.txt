@@ -3,3 +3,7 @@
 - Using arbitrary percentages (i.e. not 50% or 100%) is bad practice
 
 - calc is a really powerful tool
+
+- use grid-template-columns: repeat(auto-fit,minmax(150,1fr)); to fit consistently sized elements with an intended minimum width into a grid
+
+- set base font size in pixel units, and have different rem values for different screen size ranges
